@@ -1,0 +1,18 @@
+:root { font-family: Inter, Arial, sans-serif; color: #1f2937; }
+body { margin: 0; background: #f4f7fb; }
+.app-shell { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+.sidebar { background: #1f2937; color: #fff; padding: 1rem; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { margin: 0.7rem 0; color: #d1d5db; }
+.content { padding: 1rem 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
+.metric { background: #fff; border-radius: 8px; padding: 1rem; border-left: 4px solid #6b7280; }
+.metric-good { border-color: #16a34a; }
+.metric-bad { border-color: #dc2626; }
+.panel { background:#fff; padding: 1rem; margin-top: 1rem; border-radius: 8px; }
+.row { display: grid; grid-template-columns: repeat(4, minmax(100px, 1fr)); gap: 0.5rem; margin-bottom: 0.5rem; }
+input, select, button { padding: 0.5rem; }
+.upload { display:block; margin: 0.6rem 0; }
+.pass { color: #15803d; font-weight: 700; }
+.fail { color: #b91c1c; font-weight: 700; }
+@media (max-width: 900px) { .app-shell { grid-template-columns: 1fr; } .sidebar { position: sticky; top:0; } }
